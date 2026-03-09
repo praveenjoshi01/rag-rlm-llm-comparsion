@@ -1,0 +1,57 @@
+{
+  "revenue_figures": {
+    "Microsoft Cloud total": "$40.9B",
+    "Total revenue": "$69.6B",
+    "Productivity and Business": "$29.4B",
+    "Intelligent Cloud": "$25.5B",
+    "More Personal Computing": "$14.7B",
+    "Azure growth YoY": "31%",
+    "Azure AI growth YoY": "157%",
+    "Productivity growth": "14%",
+    "Intelligent Cloud growth": "19%",
+    "MPC growth": "6%",
+    "Operating income": "$31.7B",
+    "Net income": "$24.1B",
+    "Diluted EPS": "$3.23"
+  },
+  "guidance_statements": [
+    "Productivity Q3: $29.4B to $29.7B",
+    "Intelligent Cloud Q3: $25.9B to $26.2B",
+    "Azure Q3 growth 31 to 32 percent CC",
+    "More Personal Computing Q3: $13.4B to $13.8B",
+    "Q3 COGS: $22.1B to $22.3B",
+    "Q3 OpEx: $15.2B to $15.3B",
+    "Q3 effective tax rate approximately 19 percent",
+    "FX headwind approximately 1 percent"
+  ],
+  "risk_factors": [
+    "Macro uncertainty impacting cloud deal timing",
+    "FX headwind approximately 1 percent",
+    "AI infrastructure capacity constraints",
+    "Competition intensifying in productivity AI",
+    "Regulatory scrutiny around AI and data"
+  ],
+  "analyst_topics": [
+    "Azure AI 157% growth sustainability",
+    "Azure Q3 guidance vs capacity constraints",
+    "M365 Copilot seat attach rate and ASP",
+    "CapEx ROIC timeline for AI infrastructure"
+  ],
+  "key_entities": [
+    "Satya Nadella",
+    "Amy Hood",
+    "Brett Iversen",
+    "Azure",
+    "Microsoft 365 Copilot",
+    "GitHub Copilot",
+    "Office 365",
+    "Dynamics 365",
+    "LinkedIn",
+    "Azure OpenAI Service",
+    "Azure AI Foundry",
+    "Morgan Stanley",
+    "Bernstein",
+    "Stifel",
+    "Jefferies"
+  ]
+}

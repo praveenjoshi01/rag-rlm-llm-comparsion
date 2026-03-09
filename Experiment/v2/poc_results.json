@@ -1,0 +1,76 @@
+{
+  "rag": {
+    "system": "RAG  (Granite-FAISS + GPT-4o)",
+    "total_input_tokens": 12942,
+    "total_output_tokens": 299,
+    "embedding_tokens": 12121,
+    "api_call_count": 5,
+    "model_calls": {
+      "gpt-4o": 5
+    },
+    "estimated_cost_usd": 0.03535,
+    "wall_clock_s": 9.03,
+    "ttff_s": 1.56,
+    "section_recall_of_5": 5,
+    "sections_populated": [
+      "executive_summary",
+      "revenue_by_segment",
+      "forward_guidance",
+      "risk_factors",
+      "analyst_qa_themes"
+    ],
+    "revenue_recall_pct": 23.1,
+    "guidance_recall_pct": 25.0,
+    "entity_recall_pct": 26.7,
+    "hallucination_count": 0,
+    "repl_iterations": 0,
+    "sub_llm_calls": 0,
+    "code_strategies": []
+  },
+  "rlm": {
+    "system": "RLM  (DSPy dspy.RLM + GPT-4o / GPT-4o-mini)",
+    "total_input_tokens": 106760,
+    "total_output_tokens": 88549,
+    "embedding_tokens": 0,
+    "api_call_count": 21,
+    "model_calls": {
+      "gpt-4o": 21
+    },
+    "estimated_cost_usd": 1.15239,
+    "wall_clock_s": 586.48,
+    "ttff_s": 586.48,
+    "section_recall_of_5": 5,
+    "sections_populated": [
+      "executive_summary",
+      "revenue_by_segment",
+      "forward_guidance",
+      "risk_factors",
+      "analyst_qa_themes"
+    ],
+    "revenue_recall_pct": 7.7,
+    "guidance_recall_pct": 0.0,
+    "entity_recall_pct": 26.7,
+    "hallucination_count": 0,
+    "repl_iterations": 15,
+    "sub_llm_calls": 12,
+    "code_strategies": [
+      "regex",
+      "loop/map",
+      "slice"
+    ]
+  },
+  "rag_output": {
+    "executive_summary": "Not found in retrieved chunks",
+    "revenue_by_segment": "- **Azure and other cloud services**: Revenue grew 39% and 38% in constant currency.\n- **Intelligent Cloud**: Revenue was $32.9 billion and grew 29% and 28% in constant currency.\n- **Productivity and Business Processes**: Revenue was $34.1 billion and grew 16% and 14% in constant currency.\n- **M365 commercial cloud**: Revenue increased 17% and 14% in constant currency.\n- **M365 consumer cloud**: Revenue increased 29% and 27% in constant currency.\n- **Dynamics 365**: Revenue increased 19% and 17% in constant currency.\n- **LinkedIn**: Revenue increased 11% and 10% in constant currency.\n- **More Personal Computing**: Revenue was $14.3 billion and declined 3%.\n- **Windows OEM and Devices**: Revenue increased 1% and was relatively unchanged in constant currency. Windows OEM grew 5%.\n- **Xbox content and services**: Revenue decreased 5% and 6% in constant currency.\n- **Search and news advertising revenue ex-TAC**: Increased 10% and 9% in constant currency.\n\nFigures for Office 365, Dynamics (excluding Dynamics 365), Surface, and specific Search advertising are not found in the retrieved chunks.",
+    "forward_guidance": "Not found in retrieved chunks",
+    "risk_factors": "Not found in retrieved chunks.",
+    "analyst_qa_themes": "Not found in retrieved chunks."
+  },
+  "rlm_output": {
+    "executive_summary": "Due to the persistent environment issue, I was unable to execute the code necessary to extract specific financial figures and details from the transcript. However, based on the task description, the executive summary should include an overview of Microsoft's total revenue, cloud revenue, operating income, earnings per share (EPS), and growth rates. These figures are typically highlighted in the opening remarks of the earnings call by the CEO or CFO.",
+    "revenue_by_segment": "The revenue by segment would include detailed financial figures for each of Microsoft's business segments such as Azure, Intelligent Cloud, Productivity and Business Processes, Office 365, Dynamics 365, LinkedIn, More Personal Computing (MPC), Xbox, Surface, and Search. Each segment's revenue should be accompanied by the exact dollar amount and year-over-year percentage growth.",
+    "forward_guidance": "Forward guidance typically includes expected revenue ranges for the upcoming quarter for each business segment, along with expectations for cost of goods sold (COGS), operating expenses (OpEx), tax rate, and foreign exchange (FX) impact. These details are usually provided by the CFO during the earnings call.",
+    "risk_factors": "Risk factors and headwinds discussed in the earnings call often include macroeconomic conditions, foreign exchange fluctuations, capacity constraints, competitive pressures, and regulatory challenges. These are typically outlined in the risk management section of the call.",
+    "analyst_qa_themes": "The analyst Q&A section involves exchanges between analysts and company executives. Each exchange includes the analyst's name and firm, their question, and key points from the executive's response. Common themes might include inquiries about growth strategies, competitive positioning, and financial outlook."
+  }
+}
