@@ -1,0 +1,113 @@
+{
+  "rag": {
+    "system": "RAG  (Granite-FAISS + GPT-4o)",
+    "total_input_tokens": 13280,
+    "total_output_tokens": 264,
+    "embedding_tokens": 12260,
+    "api_call_count": 5,
+    "model_calls": {
+      "gpt-4o": 5
+    },
+    "estimated_cost_usd": 0.03584,
+    "wall_clock_s": 10.26,
+    "ttff_s": 1.86,
+    "section_recall_of_5": 5,
+    "sections_populated": [
+      "executive_summary",
+      "revenue_by_segment",
+      "forward_guidance",
+      "risk_factors",
+      "analyst_qa_themes"
+    ],
+    "revenue_recall_pct": 44.8,
+    "guidance_recall_pct": 52.6,
+    "entity_recall_pct": 8.1,
+    "hallucination_count": 0,
+    "repl_iterations": 0,
+    "sub_llm_calls": 0,
+    "code_strategies": []
+  },
+  "llm": {
+    "system": "LLM  (GPT-4o Full Context)",
+    "total_input_tokens": 55176,
+    "total_output_tokens": 1750,
+    "embedding_tokens": 0,
+    "api_call_count": 5,
+    "model_calls": {
+      "gpt-4o": 5
+    },
+    "estimated_cost_usd": 0.15544,
+    "wall_clock_s": 25.43,
+    "ttff_s": 4.11,
+    "section_recall_of_5": 5,
+    "sections_populated": [
+      "executive_summary",
+      "revenue_by_segment",
+      "forward_guidance",
+      "risk_factors",
+      "analyst_qa_themes"
+    ],
+    "revenue_recall_pct": 79.3,
+    "guidance_recall_pct": 73.7,
+    "entity_recall_pct": 59.5,
+    "hallucination_count": 0,
+    "repl_iterations": 0,
+    "sub_llm_calls": 0,
+    "code_strategies": []
+  },
+  "rlm": {
+    "system": "RLM  (DSPy dspy.RLM + GPT-4o / GPT-4o-mini)",
+    "total_input_tokens": 97524,
+    "total_output_tokens": 5677,
+    "embedding_tokens": 0,
+    "api_call_count": 17,
+    "model_calls": {
+      "gpt-4o": 14,
+      "gpt-4o-mini": 3
+    },
+    "estimated_cost_usd": 0.25072,
+    "wall_clock_s": 139.89,
+    "ttff_s": 139.89,
+    "section_recall_of_5": 5,
+    "sections_populated": [
+      "executive_summary",
+      "revenue_by_segment",
+      "forward_guidance",
+      "risk_factors",
+      "analyst_qa_themes"
+    ],
+    "revenue_recall_pct": 44.8,
+    "guidance_recall_pct": 52.6,
+    "entity_recall_pct": 10.8,
+    "hallucination_count": 0,
+    "repl_iterations": 12,
+    "sub_llm_calls": 3,
+    "code_strategies": [
+      "loop/map",
+      "filter",
+      "slice",
+      "regex"
+    ]
+  },
+  "rag_output": {
+    "executive_summary": "Not found in retrieved chunks",
+    "revenue_by_segment": "- **Azure and other cloud services**: Revenue grew 39% and 38% in constant currency.\n- **Intelligent Cloud segment**: Revenue was $32.9 billion, grew 29% and 28% in constant currency.\n- **Productivity and Business Processes**: Revenue was $34.1 billion, grew 16% and 14% in constant currency.\n- **M365 commercial cloud**: Revenue increased 17% and 14% in constant currency.\n- **Dynamics 365**: Revenue increased 19% and 17% in constant currency.\n- **LinkedIn**: Revenue increased 11% and 10% in constant currency.\n- **More Personal Computing**: Revenue was $14.3 billion, declined 3%.\n- **Windows OEM and Devices**: Revenue increased 1%, Windows OEM grew 5%.\n- **Xbox content and services**: Revenue decreased 5% and 6% in constant currency.\n- **Search and news advertising revenue ex-TAC**: Increased 10% and 9% in constant currency.\n\nNot found in retrieved chunks: Office 365, Dynamics (separate from Dynamics 365), Surface.",
+    "forward_guidance": "Not found in retrieved chunks",
+    "risk_factors": "Not found in retrieved chunks",
+    "analyst_qa_themes": "Not found in retrieved chunks."
+  },
+  "llm_output": {
+    "executive_summary": "In Q2 FY2026, Microsoft reported strong financial performance with the following key metrics:\n\n- **Total Revenue**: $81.3 billion, representing a growth of 17% year-over-year and 15% in constant currency.\n- **Microsoft Cloud Revenue**: $51.5 billion, which grew by 26% year-over-year and 24% in constant currency.\n- **Operating Income**: Increased by 21% year-over-year and 19% in constant currency.\n- **Earnings Per Share (EPS)**: $4.14, an increase of 24% year-over-year and 21% in constant currency, when adjusted for the impact from the investment in OpenAI.\n\nAdditional headline growth rates include:\n- Gross margin dollars increased by 16% year-over-year and 14% in constant currency.\n- Company gross margin percentage was 68%, slightly down year-over-year.\n- Operating margins increased to 47%, ahead of expectations.\n- Commercial bookings increased by 230% year-over-year and 228% in constant currency.\n- Commercial remaining performance obligation increased to $625 billion, up 110% year-over-year.\n- Productivity and Business Processes revenue grew by 16% year-over-year and 14% in constant currency.\n- Intelligent Cloud segment revenue grew by 29% year-over-year and 28% in constant currency.\n- More Personal Computing revenue declined by 3% year-over-year.\n\nOverall, Microsoft exceeded expectations across revenue, operating income, and EPS, driven by strong demand for cloud services and strategic investments in AI infrastructure.",
+    "revenue_by_segment": "- **Azure and other cloud services**: Revenue grew 39% and 38% in constant currency.\n- **Intelligent Cloud segment**: Revenue was $32.9 billion, grew 29% and 28% in constant currency.\n- **Productivity and Business Processes**: Revenue was $34.1 billion, grew 16% and 14% in constant currency.\n- **M365 commercial cloud**: Revenue increased 17% and 14% in constant currency.\n- **Dynamics 365**: Revenue increased 19% and 17% in constant currency.\n- **LinkedIn**: Revenue increased 11% and 10% in constant currency.\n- **More Personal Computing**: Revenue was $14.3 billion, declined 3%.\n- **Windows OEM and Devices**: Revenue increased 1%, Windows OEM grew 5%.\n- **Xbox content and services**: Revenue decreased 5% and 6% in constant currency.\n- **Search and news advertising revenue ex-TAC**: Increased 10% and 9% in constant currency.\n\nNote: Surface revenue was not mentioned in the transcript.",
+    "forward_guidance": "**Q3 FY2026 Guidance:**\n\n- **Total Company Revenue:** $80.65 to $81.75 billion, growth of 15% to 17%.\n- **COGS (Cost of Goods Sold):** $26.65 to $26.85 billion, growth of 22% to 23%.\n- **Operating Expenses:** $17.8 to $17.9 billion, growth of 10% to 11%.\n- **Other Income and Expense:** Expected to be roughly $700 million.\n- **Effective Tax Rate:** Approximately 19%.\n\n**Segment Revenue Guidance:**\n\n- **Productivity and Business Processes:** $34.25 to $34.55 billion, growth of 14% to 15%.\n- **Intelligent Cloud:** $34.1 to $34.4 billion, growth of 27% to 29%.\n- **More Personal Computing:** $12.3 to $12.8 billion.\n\n**Azure Constant-Currency Growth Guidance:**\n- Azure revenue growth expected to be between 37% and 38% in constant currency.\n\n**FX Impact:**\n- FX expected to increase total revenue growth by 3 points.\n- FX expected to increase revenue growth by 4 points in Productivity and Business Processes, and 2 points in Intelligent Cloud and More Personal Computing.\n- FX expected to increase COGS and operating expense growth by 2 points.\n\n**Full-Year Outlook Statements:**\n- FY26 operating margins expected to be up slightly.\n- FX expected to increase Q4 total revenue and COGS growth by less than 1 point, with no impact on operating expense growth.",
+    "risk_factors": "The transcript mentions the following risks, headwinds, and challenges:\n\n1. **AI Supply Constraints**: There is a mention of demand exceeding supply, particularly in Azure, and the need to balance incoming supply with expanding first-party AI usage and R&D allocations.\n\n2. **CapEx ROI Concerns**: There are concerns about the return on investment for capital expenditures, particularly in relation to Azure growth and the allocation of GPUs and CPUs.\n\n3. **OpenAI Concentration**: There is a significant concentration of commercial remaining performance obligation (RPO) related to OpenAI, which could pose a risk if there are changes in this partnership.\n\n4. **Gaming Impairment**: There are impairment charges in the gaming business, which have impacted operating expenses.\n\n5. **Memory Pricing**: Increased memory pricing is mentioned as a potential impact on Windows OEM and on-premises server markets, as well as on capital expenditures.\n\n6. **FX Impact**: Foreign exchange (FX) is noted to have increased reported results slightly less than expected, particularly in Intelligent Cloud revenue, and is expected to impact future revenue growth.\n\n7. **Competition**: There is an implicit mention of competition in the context of needing to remain a leader in AI and app innovation, as well as the need to continuously innovate in silicon and systems.\n\n8. **Regulatory**: Not explicitly mentioned in the transcript.",
+    "analyst_qa_themes": "**1. Keith Weiss, Morgan Stanley:**\n   - **Question Topic:** CapEx growth and Azure growth expectations.\n   - **Key Points from Management's Response:** Amy Hood explained that CapEx spend, especially on short-lived assets like CPUs and GPUs, is allocated across various priorities, including M365 Copilot and GitHub Copilot, R&D, and Azure capacity. She emphasized that the allocation is about long-term decisions and optimizing for customer benefits across all layers of the stack. Satya Nadella added that the focus is on building a portfolio with a strong lifetime value, not just maximizing one business.\n\n**2. Mark Moerdler, Bernstein:**\n   - **Question Topic:** Hardware CapEx investment and revenue/margins.\n   - **Key Points from Management's Response:** Amy Hood clarified that the average duration of RPO is a mix of shorter and longer contracts, with Azure contracts being longer. She assured that much of the GPU capacity is already contracted for its useful life, reducing risk. Satya Nadella added that software is used to optimize the fleet over time, improving efficiency and margins.\n\n**3. Brent Thill, Jefferies:**\n   - **Question Topic:** Exposure to OpenAI in the backlog.\n   - **Key Points from Management's Response:** Amy Hood highlighted the diversification of the RPO balance, with 55% related to a broad portfolio beyond OpenAI. She expressed confidence in the partnership with OpenAI and the broader customer base.\n\n**4. Karl Keirstead, UBS:**\n   - **Question Topic:** Capacity additions and future plans.\n   - **Key Points from Management's Response:** Amy Hood explained that capacity is being added globally, not just in specific locations like Atlanta and Wisconsin. The focus is on meeting global demand efficiently and quickly.\n\n**5. Mark Murphy, J.P. Morgan:**\n   - **Question Topic:** Silicon innovation and its impact on margins.\n   - **Key Points from Management's Response:** Satya Nadella discussed the progress with Maia 200 and the importance of continuous innovation in silicon and systems. He emphasized the need for a flexible fleet with the best TCO, integrating both in-house and partner technologies.\n\n**6. Brad Zelnick, Deutsche Bank:**\n   - **Question Topic:** Enterprise adoption of Microsoft AI stack.\n   - **Key Points from Management's Response:** Satya Nadella described the transformative impact of Microsoft's AI tools like M365 Copilot and GitHub Copilot, which leverage enterprise data to enhance business processes and workflows.\n\n**7. Raimo Lenschow, Barclays:**\n   - **Question Topic:** CPU side of Azure and cloud transitions.\n   - **Key Points from Management's Response:** Satya Nadella explained that AI workloads require both AI accelerators and compute resources, highlighting the ongoing cloud migrations and the need for a balanced infrastructure to support new and existing workloads."
+  },
+  "rlm_output": {
+    "executive_summary": "Microsoft reported strong financial performance in Q2 FY2026 with revenue of $81.3 billion, up 17% year-over-year. Earnings per share increased by 24%, driven by growth in the Microsoft Cloud, which surpassed $50 billion in revenue for the first time. The company continues to invest in AI and cloud infrastructure to fuel long-term growth.",
+    "revenue_by_segment": "1. Microsoft Cloud: $51.5 billion, up 26%.\n2. Productivity and Business Processes: $34.1 billion, up 16%.\n3. Intelligent Cloud: $34.1 billion, up 29%.\n4. More Personal Computing: $12.3 billion, up 3%.",
+    "forward_guidance": "Microsoft expects Q3 revenue growth to be driven by Azure, with anticipated growth between 37% and 38% in constant currency. The company projects continued growth in M365 commercial cloud and Dynamics 365, with revenue growth in the low-double digits for LinkedIn.",
+    "risk_factors": "1. Risks and uncertainties in forward-looking statements.\n2. Supply constraints for Azure services and AI workloads.\n3. Impact of AI infrastructure investments on gross margins.\n4. Concerns about CapEx growth and ROI.\n5. Volatility in revenue recognition due to OpenAI contracts.\n6. Market dynamics, including increased memory pricing.\n7. Execution challenges in search and news advertising.\n8. Dependence on key partnerships, such as with OpenAI.\n9. Operational changes affecting CPU and GPU resources.\n10. Economic conditions affecting customer spending.\n11. Competitive landscape in technology and cloud services.",
+    "analyst_qa_themes": "1. Earnings and stock performance concerns.\n2. CapEx and Azure growth relationship.\n3. ROI assessment for AI-centric investments.\n4. Sustainability of OpenAI partnership revenue.\n5. Capacity expansion in Azure.\n6. Advancements in silicon technology.\n7. Enterprise transformation with AI tools.\n8. Cloud migration trends and infrastructure needs."
+  }
+}

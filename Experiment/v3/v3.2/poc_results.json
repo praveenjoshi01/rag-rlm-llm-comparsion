@@ -1,0 +1,111 @@
+{
+  "rag": {
+    "system": "RAG  (Granite-FAISS + GPT-4o-mini)",
+    "total_input_tokens": 7302,
+    "total_output_tokens": 647,
+    "embedding_tokens": 12260,
+    "api_call_count": 1,
+    "model_calls": {
+      "gpt-4o-mini": 1
+    },
+    "estimated_cost_usd": 0.00148,
+    "wall_clock_s": 14.5,
+    "ttff_s": 14.5,
+    "section_recall_of_5": 5,
+    "sections_populated": [
+      "executive_summary",
+      "revenue_by_segment",
+      "forward_guidance",
+      "risk_factors",
+      "analyst_qa_themes"
+    ],
+    "revenue_recall_pct": 79.3,
+    "guidance_recall_pct": 63.2,
+    "entity_recall_pct": 10.8,
+    "hallucination_count": 0,
+    "repl_iterations": 0,
+    "sub_llm_calls": 0,
+    "code_strategies": []
+  },
+  "llm": {
+    "system": "LLM  (GPT-4o-mini Full Context)",
+    "total_input_tokens": 11060,
+    "total_output_tokens": 666,
+    "embedding_tokens": 0,
+    "api_call_count": 1,
+    "model_calls": {
+      "gpt-4o-mini": 1
+    },
+    "estimated_cost_usd": 0.00206,
+    "wall_clock_s": 12.31,
+    "ttff_s": 12.31,
+    "section_recall_of_5": 5,
+    "sections_populated": [
+      "executive_summary",
+      "revenue_by_segment",
+      "forward_guidance",
+      "risk_factors",
+      "analyst_qa_themes"
+    ],
+    "revenue_recall_pct": 82.8,
+    "guidance_recall_pct": 68.4,
+    "entity_recall_pct": 10.8,
+    "hallucination_count": 0,
+    "repl_iterations": 0,
+    "sub_llm_calls": 0,
+    "code_strategies": []
+  },
+  "rlm": {
+    "system": "RLM  (DSPy dspy.RLM + GPT-4o-mini)",
+    "total_input_tokens": 106545,
+    "total_output_tokens": 5244,
+    "embedding_tokens": 0,
+    "api_call_count": 15,
+    "model_calls": {
+      "gpt-4o-mini": 15
+    },
+    "estimated_cost_usd": 0.01913,
+    "wall_clock_s": 88.9,
+    "ttff_s": 88.9,
+    "section_recall_of_5": 5,
+    "sections_populated": [
+      "executive_summary",
+      "revenue_by_segment",
+      "forward_guidance",
+      "risk_factors",
+      "analyst_qa_themes"
+    ],
+    "revenue_recall_pct": 17.2,
+    "guidance_recall_pct": 21.1,
+    "entity_recall_pct": 0.0,
+    "hallucination_count": 0,
+    "repl_iterations": 15,
+    "sub_llm_calls": 0,
+    "code_strategies": [
+      "regex",
+      "loop/map",
+      "slice"
+    ]
+  },
+  "rag_output": {
+    "executive_summary": "This quarter, revenue was $81.3 billion, up 17% and 15% in constant currency. Gross margin dollars increased 16% and 14% in constant currency while operating income increased 21% and 19% in constant currency. Earnings per share was $4.14, an increase of 24% and 21% in constant currency. Company gross margin percentage was 68%, down slightly year-over-year. Operating expenses increased 5% and 4% in constant currency. Operating margins increased year-over-year to 47%. Microsoft Cloud revenue was $51.5 billion and grew 26% and 24% in constant currency. Commercial bookings increased 230% and 228% in constant currency. Commercial remaining performance obligation increased to $625 billion and was up 110% year-over-year.",
+    "revenue_by_segment": "Intelligent Cloud segment revenue was $32.9 billion, growing 29% and 28% in constant currency. Azure and other cloud services revenue grew 39% and 38% in constant currency. More Personal Computing revenue was $14.3 billion, declining 3%. Productivity and Business Processes revenue was $34.1 billion, growing 16% and 14% in constant currency. M365 commercial cloud revenue increased 17% and 14% in constant currency. M365 consumer cloud revenue increased 29% and 27% in constant currency. LinkedIn revenue increased 11% and 10% in constant currency. Dynamics 365 revenue increased 19% and 17% in constant currency.",
+    "forward_guidance": "For Q3, we expect revenue of $80.65 to $81.75 billion or growth of 15% to 17%. We expect COGS of $26.65 to $26.85 billion, or growth of 22% to 23%. Operating expense of $17.8 to $17.9 billion or growth of 10% to 11%. In Productivity and Business Processes, we expect revenue of $34.25 to $34.55 billion, or growth of 14% to 15%. In Intelligent Cloud, we expect revenue of $34.1 to $34.4 billion, or growth of 27% to 29%. In Azure, we expect Q3 revenue growth to be between 37% and 38% in constant currency.",
+    "risk_factors": "Rising memory prices could impact capital expenditures and the on-premises server business is expected to decline in the low-single digits. Increased memory pricing could create additional volatility in transactional purchasing. The potential impact on Windows OEM and on-premises server markets from increased memory pricing is noted. There is also concern regarding the ROI on capital expenditures as Azure growth may be slower than expected.",
+    "analyst_qa_themes": "Analysts are concerned about the correlation between capital expenditures and Azure revenue growth. There is a focus on how to think about capacity expansion and its potential yield in terms of Azure growth. Questions were raised about the health of contracts with OpenAI and the diversification of the commercial remaining performance obligation."
+  },
+  "llm_output": {
+    "executive_summary": "This quarter, revenue was $81.3 billion, up 17% and 15% in constant currency. Gross margin dollars increased 16% and 14% in constant currency while operating income increased 21% and 19% in constant currency. Earnings per share was $4.14, an increase of 24% and 21% in constant currency. Microsoft Cloud surpassed $50 billion in revenue for the first time, up 26% year-over-year. Capital expenditures were $37.5 billion, and cash flow from operations was $35.8 billion, up 60%. Free cash flow was $5.9 billion. We returned $12.7 billion to shareholders through dividends and share repurchases, an increase of 32% year-over-year.",
+    "revenue_by_segment": "Revenue from Productivity and Business Processes was $34.1 billion and grew 16% and 14% in constant currency. M365 commercial cloud revenue increased 17% and 14% in constant currency. M365 consumer cloud revenue increased 29% and 27% in constant currency. LinkedIn revenue increased 11% and 10% in constant currency. Dynamics 365 revenue increased 19% and 17% in constant currency. Intelligent Cloud segment revenue was $32.9 billion and grew 29% and 28% in constant currency. Azure and other cloud services revenue grew 39% and 38% in constant currency. More Personal Computing revenue was $14.3 billion and declined 3%. Windows OEM and Devices revenue increased 1%. Search and news advertising revenue ex-TAC increased 10% and 9% in constant currency. Gaming revenue decreased 9% and 10% in constant currency.",
+    "forward_guidance": "We expect revenue of $80.65 to $81.75 billion or growth of 15% to 17%. We expect COGS of $26.65 to $26.85 billion, or growth of 22% to 23%. Operating expense of $17.8 to $17.9 billion or growth of 10% to 11%. In Productivity and Business Processes, we expect revenue of $34.25 to $34.55 billion, or growth of 14% to 15%. In Intelligent Cloud, we expect revenue of $34.1 to $34.4 billion, or growth of 27% to 29%. In More Personal Computing, we expect revenue to be $12.3 to $12.8 billion.",
+    "risk_factors": "We do not undertake any duty to update any forward-looking statement. Actual results could materially differ because of factors discussed in today's earnings press release, in the comments made during this conference call, and in the risk factor section of our Form 10-K, Forms 10-Q, and other reports and filings with the Securities and Exchange Commission.",
+    "analyst_qa_themes": "Concerns about CapEx growing faster than expected and Azure growth potentially slowing. Discussion on the correlation between CapEx spend and Azure revenue. Questions about the durability of the OpenAI contract and its impact on revenue. Inquiry into the amount of capacity coming online and its implications for future growth."
+  },
+  "rlm_output": {
+    "executive_summary": "Microsoft's earnings call highlighted significant growth in the cloud segment, with expectations for continued revenue growth despite potential risks.",
+    "revenue_by_segment": "No specific revenue figures were extracted, but guidance indicates strong performance across segments.",
+    "forward_guidance": "['We expect FX to increase total revenue growth by 3 points.', 'We expect revenue of $80.65 to $81.75 billion or growth of 15% to 17%.', 'We expect revenue growth to be between 13% and 14% in constant currency.']",
+    "risk_factors": "['Risks related to foreign exchange fluctuations.', 'Concerns about growth normalization following the launch of SQL Server 2025.']",
+    "analyst_qa_themes": "The Q&A section focused on growth expectations, market challenges, and strategic initiatives."
+  }
+}
